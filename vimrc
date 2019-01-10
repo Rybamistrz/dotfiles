@@ -58,6 +58,12 @@ let NERDTreeChDirMode=0
 let NERDTreeMouseMode=2
 let NERDTreeKeepTreeInNewTab=1
 
+" Nerdcommenter
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Enable NERDCommenterToggle to check all selected lines is commented or not
+let g:NERDToggleCheckAllLines = 1
+
 " Highlight whitespaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
