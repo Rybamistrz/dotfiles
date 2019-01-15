@@ -18,6 +18,9 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'bling/vim-bufferline'
+Plugin 'corntrace/bufexplorer'
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -63,6 +66,9 @@ let NERDTreeKeepTreeInNewTab=1
 let g:NERDSpaceDelims = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
+
+" BufferExplorer
+map <C-B> :BufExplorer<CR>
 
 " Highlight whitespaces
 highlight ExtraWhitespace ctermbg=red guibg=red
